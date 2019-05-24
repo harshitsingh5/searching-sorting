@@ -5,15 +5,15 @@ class linearSearch
   {
     Scanner sc=new Scanner(System.in);
     System.out.println("Enter size of array: ");
-    int n=sc.nextInt();
+    int n=sc.nextInt();         //input the size of array
     int a[]=new int[n];
     System.out.println("Enter elements: ");
     for(int i=0;i<n;i++)
-      a[i]=sc.nextInt();
+      a[i]=sc.nextInt();        //input array elements
     System.out.println("Enter element to be searched: ");
-    int v=sc.nextInt();
+    int v=sc.nextInt();         //input the element to be searched
     linearSearch ll=new linearSearch();
-    ll.lsearch(a,v);
+    ll.lsearch(a,v);            //pass the array and element to be searched to the linear search function
   }
   void lsearch(int a[], int v)
   {
